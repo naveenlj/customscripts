@@ -13,8 +13,7 @@ YUM_CMD=$(which yum)
  elif [[ ! -z $APT_GET_CMD ]]; then
 
 apt-get -y update
-apt-get install ruby-dev build-essential
-
+apt-get -y install ruby-dev build-essential
 gem install fpm --no-ri --no-rdoc
 
 #elif [[ ! -z $OTHER_CMD ]]; then
